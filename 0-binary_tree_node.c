@@ -9,15 +9,19 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
+	/** create a new node by use of struct tag. **/
 	binary_tree_t *new_node = malloc(sizeof(binary_tree_t));
 
+	/** Check wheather  memory allocation failed. **/
 	if (new_node == NULL)
 	{
-		return NULL;
+		/** return value should be inside brackets. **/
+		return (NULL);
 	}
+	/** Assign values to the new node**/
 	new_node->n = value;
 	new_node->left = NULL;
 	new_node->right = NULL;
 	new_node->parent = parent;
-	return new_node;
+	return (new_node);
 }
