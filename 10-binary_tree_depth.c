@@ -14,5 +14,5 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 	}
 	
 	/**Recursively count the depth from the parent node**/
-	return (1 + binary_tree_depth(tree->parent));
+	return ((1 + binary_tree_depth(tree->parent)) - 1);
 }
