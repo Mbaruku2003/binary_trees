@@ -14,6 +14,6 @@ int binary_tree_is_leaf(const binary_tree_t *node)
 	}
 
 	/** check if both the left node and right node are null. **/
-	return node->left == NULL && node->right == NULL;
+	return (node->left == NULL && node->right == NULL);
 }
 
