@@ -13,8 +13,13 @@ int binary_tree_is_full(const binary_tree_t *tree)
 		return (0);
 	}
 	/** chcks if both right child and left child exist **/
-	if (!tree->left || !tree->right)
+	if (!tree->left && !tree->right)
 	{
+		return (1);
+	}
+	else if (tree->left == NULL || tree->right == NULL)
+	{
+		/**only one child or no child not full**/
 		return (0);
 	}
 	/** checks if subtree is fully recursive **/
