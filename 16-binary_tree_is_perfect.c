@@ -5,7 +5,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 int is_perfect_util(const binary_tree_t *node, int level);
 /**
  * binary_tree_is_perfect - checks if a binary tree is perfect
- * @tree - a pointer to the root node
+ * @tree: a pointer to the root node
  * Return: 0 if NULL
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
