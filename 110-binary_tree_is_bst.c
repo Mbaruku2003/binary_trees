@@ -5,7 +5,7 @@
  * is_valid_bst_helper - answers true if it i a bst
  * @node: the node
  * @min_val: the minimum value
- * @max_val maximum value
+ * @max_val: maximum value
  * Return: True or false wheather it is abinary st
  */
 bool is_valid_bst_helper(const binary_tree_t *node, int min_val, int max_val)
